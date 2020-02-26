@@ -13,5 +13,6 @@ mongoose.connect('mongodb://localhost/nodeapi:27017',{
 });
 
 require('./controllers/AuthController')(app);
+require('./controllers/ProjectController')(app);
 
 app.listen(3000);
